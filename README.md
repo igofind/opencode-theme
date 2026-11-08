@@ -21,7 +21,9 @@
 | `dist/chat.css` | 生成的作用域 CSS，供人阅读核对；勿手改 |
 | `dist/gui-experimental.cjs` | 生成的 GUI 插件入口，内联同一份 CSS 并 `ctx.add(Style, …)`；勿手改 |
 | `scripts/verify.mjs` | 产物校验：CJS 语法、替身 SDK 求值、CSS 逐字节一致、作用域与保留/撤销项检查 |
-| `LICENSE` / `.gitignore` / `README.md` | 本项目许可、忽略规则、本文件 |
+| `README.md` | 使用说明、目录结构、定制清单、作用域挂载点 |
+| `AGENTS.md` | 给协作者 / AI 的改动约束、生成链路与维护约定 |
+| `LICENSE` / `.gitignore` | 本项目许可、忽略规则 |
 
 **`dist/` 是交付产物，必须提交，不要写进 `.gitignore`**——clone 仓库后靠它加载插件。`package.json` 的 `name` 与目录名一致（`opencode-theme`），所以插件 ID 不变。
 
