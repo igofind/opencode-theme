@@ -1,0 +1,24 @@
+{
+  "name": "opencode-theme",
+  "version": "1.0.0",
+  "description": "把 OpenCode 终端 TUI 的 opencode 配色移植到桌面端聊天区（GUI Style 插件）",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "theme",
+    "gui-plugin",
+    "tui"
+  ],
+  "exports": {
+    "./gui-experimental": "./dist/gui-experimental.cjs"
+  },
+  "scripts": {
+    "generate": "bun src/generate.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igofind/opencode-theme.git"
+  }
+}
